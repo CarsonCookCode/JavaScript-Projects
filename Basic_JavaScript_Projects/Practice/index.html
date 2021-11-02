@@ -2,20 +2,19 @@
 <html>
     <head>
         <meta charset="UTF-8">
+        <script src="main.js" defer></script>
     </head>
     <body>
-        <script>
-            A = "Always ";
-            B = "remember: ";
-            document.write(A + B);
+        <p>Welcome to rock, paper, scissors...</p>
+        <p>Make your choice: rock - paper - scissors</p>
+        <input id="answer">
+        <button onclick="switchFunc()">Submit</button>
+        <p id="final"></p>
 
-            X = "you ";
-            Y = "are ";
-            document.write(X + Y);
+        <p class="class">Will change.</p>
+        <p class="class">Won't change.</p>
+        <button onclick="classChange()">class Change</button>
 
-            M = "unique, ";
-            N = "just like everyone else.";
-            document.write(M + N);
-        </script>
+        <canvas id="myCanvas" width="500" height="500" style="border: 3px solid black;"></canvas>
     </body>
 </html>
